@@ -1,7 +1,7 @@
-Value (Xi),Data,Frequency (fi),Cumulative freq. (fi^k),Relative freq. (fri=fi\N),Cumulative rel. freq. (fri^k)
-X1 = 1,0,f1 = 0,f1^k = 0,fr1 = 0,fr1^k = 0
-X2 = 2,7,f2 = 7,f2^k = 7,fr2 = 0.22,fr2^k = 0.22
-X3 = 3,16,f3 = 16,f3^k = 23,fr3 = 0.50,fr3^k = 0.72
-X4 = 4,6,f4 = 6,f4^k = 29,fr4 = 0.19,fr4^k = 0.91
-X5 = 5,3,f5 = 3,f5^k = 32,fr5 = 0.09,fr5^k = 1
-SUM,,N = 32,,1,
+Value (Xi),Data1,Frequency (fi),Cumulative freq. (fi^k),Relative freq. (fri=fi\N),Cumulative rel. freq. (fri^k)
+1,0,0,0,0,0
+2,7,7,7,0.22,0.22
+3,16,16,23,0.5,0.72
+4,6,6,29,0.19,0.91
+5,3,3,32,0.09,1
+,,32,,1,
