@@ -3,7 +3,7 @@
 # PYTHON SCRIPT VERSION OF NOTEBOOK
 
 import numpy as np
-import panda as pd
+import pandas as pd
 import matplotlib.pyplot as plt
 
 # LOADING OUR DATA
@@ -15,12 +15,13 @@ df = pd.DataFrame(data = data_1)
 df["Frequency (fi)"] = df["Frequency (fi)"].astype(float)
 
 # DATASET & DATAFRAME FOR VISUELIZATION
-data_1_mod = data_1-truncate(before = 0, after = 4, axis = "rows")
+data_1_mod = data_1.truncate(before = 0, after = 4, axis = "rows")
 plotted_df = pd.DataFrame(data = data_1_mod)
 
 # VISUELIZATION (LINE CHART)
-plotted_df.plot(x = 'Value (Xi)', y = 'Frequency (fi)', style = '-o', figsize = (10, 8), grif = True)
+plotted_df.plot(x = 'Value (Xi)', y = 'Frequency (fi)', style = '-o', figsize = (10, 8), grid = True)
 plt.legend(["Value(grades)", "Frequency"])
 
 # VISUELIZATION (HISTOGRAM)
 plotted_df.plot.bar(x = 'Value (Xi)', y = 'Frequency (fi)', grid = True, color = ['None', 'yellow', 'orange', 'blue', 'green'], legend = False)
+plt.show()
